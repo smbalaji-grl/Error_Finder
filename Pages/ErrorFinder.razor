@@ -1,0 +1,43 @@
+﻿@page "/ErrorFinder"
+<style>
+body
+{
+     background-color: rgb(205, 209, 228);
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: rgb(12, 154, 108);
+  padding: 04px 03px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+<p><label style="color:rgb(32, 124, 118);font-size:19px;font-weight: 700;">Directory</label>
+ <input class="w3-input w3-border" type="text" @bind-value=location /> </p>
+<p><label style="color:rgb(32, 124, 118);font-size:19px;font-weight: 700;">KeyError</label>
+<input class="w3-input w3-border" type="text" @bind-value=key  /> </p>
+<button class="button"   @onclick ="submit"   > Get </button>
+</body>
+
+
+
+
+@code 
+{
+    private static string location {get; set;}
+    private   string key{ get; set; }
+    private string[] dutList;
+    public void submit()
+    {
+        
+    }
+
+
+}
